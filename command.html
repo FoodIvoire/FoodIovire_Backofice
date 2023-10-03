@@ -14,6 +14,7 @@ Author URL: http://w3layouts.com
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="assets/images/icon.png">
 
   <!-- google fonts -->
@@ -216,121 +217,129 @@ Author URL: http://w3layouts.com
             <li class="breadcrumb-item active" aria-current="page">Restaurant</li>
           </ol>
         </nav>
-        <!-- //breadcrumbs -->
-        <!-- forms -->
-        <section class="forms">
-          <!-- forms 1 -->
 
-          <!-- forms 2 -->
-          <div class="card card_border py-2 mb-4">
-            <div class="card-body">
-              <form action="#" method="post">
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail4" class="input__label">Nom du Restaurant</label>
-                    <input type="text" class="form-control input-style" id="inputEmail1"
-                      placeholder="Nom du Restaurant">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputPassword4" class="input__label">Nom de la vendeuse</label>
-                    <input type="text" class="form-control input-style" id="inputPassword1"
-                      placeholder="Nom de la vendeuse">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail4" class="input__label">E-mail</label>
-                    <input type="email" class="form-control input-style" id="inputEmail4" placeholder="E-mail">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputPassword4" class="input__label">Téléphone</label>
-                    <input type="tel" class="form-control input-style" id="inputPassword4"
-                      placeholder="Numéro de téléphone">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputAddress" class="input__label">Adresse</label>
-                  <input type="text" class="form-control input-style" id="inputAddress"
-                    placeholder="1234 Rue principale">
-                </div>
-                <div class="form-group">
-                  <label for="inputAddress2" class="input__label">Adresse 2</label>
-                  <input type="text" class="form-control input-style" id="inputAddress2"
-                    placeholder="Appartement, studio, étage">
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputCity" class="input__label">Ville</label>
-                    <input type="text" class="form-control input-style" id="inputCity">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label for="inputState" class="input__label">Commune</label>
-                    <input type="text" class="form-control input-style" id="inputState">
 
-                  </div>
-                  <div class="form-group col-md-2">
-                    <label for="inputZip" class="input__label">Code postal</label>
-                    <input type="text" class="form-control input-style" id="inputZip">
-                  </div>
-                </div>
 
-                <button type="submit" class="btn btn-primary btn-style mt-4">Créer</button>
-              </form>
-            </div>
-          </div>
 
-          <!-- //forms 2 -->
 
-          <!-- supported elements -->
-          <!--  -->
-          <div class="card card_border py-2 mb-4">
-            <div class="cards__heading">
-              <h3>Ajouter des images <span></span></h3>
-            </div>
-            <div class="card-body">
-              <form class="was-validated">
-                <div class="form-group">
-                  <select class="custom-select input-style" required>
-                    <option value="">Selectionez le restaurant</option>
-                    <option value="1">Beni Food</option>
-                    <option value="2">Lola Café</option>
-                    <option value="3">Chawarma +</option>
-                  </select>
-                </div>
+        <main class="table">
+          <section class="table__header">
+            <h1>Commandes</h1>
+          </section>
+          <section class="table__body">
+            <table>
+              <thead>
+                <tr>
+                  <th>Id <span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Client <span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Emplacement <span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Date de commande <span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Statut <span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Montant <span class="icon-arrow">&UpArrow;</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>
+                  <td>Séoul</td>
+                  <td>17 décembre 2022</td>
+                  <td>
+                    <p class="status delivered">Livré</p>
+                  </td>
+                  <td><strong>55 146,70 FCFA</strong></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><img src="images/Jeet Saru.jpg" alt="">Jeet Saru</td>
+                  <td>Kathmandou</td>
+                  <td>27 août 2023</td>
+                  <td>
+                    <p class="status cancelled">Annulé</p>
+                  </td>
+                  <td><strong>2 730 405,25 FCFA</strong></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><img src="images/Sonal Gharti.jpg" alt="">Sonal Gharti</td>
+                  <td>Tokyo</td>
+                  <td>14 mars 2023</td>
+                  <td>
+                    <p class="status shipped">Expédié</p>
+                  </td>
+                  <td><strong>1 054,96 FCFA</strong></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><img src="images/Alson GC.jpg" alt="">Alson GC</td>
+                  <td>New Delhi</td>
+                  <td>25 mai 2023</td>
+                  <td>
+                    <p class="status delivered">Livré</p>
+                  </td>
+                  <td><strong>733,80 FCFA</strong></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><img src="images/Sarita Limbu.jpg" alt="">Sarita Limbu</td>
+                  <td>Paris</td>
+                  <td>23 avril 2023</td>
+                  <td>
+                    <p class="status pending">En attente</p>
+                  </td>
+                  <td><strong>299 939,91 FCFA</strong></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><img src="images/Alex Gonley.jpg" alt="">Alex Gonley</td>
+                  <td>Londres</td>
+                  <td>23 avril 2023</td>
+                  <td>
+                    <p class="status cancelled">Annulé</p>
+                  </td>
+                  <td><strong>299 939,91 FCFA</strong></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><img src="images/Alson GC.jpg" alt="">Jeet Saru</td>
+                  <td>New York</td>
+                  <td>20 mai 2023</td>
+                  <td>
+                    <p class="status delivered">Livré</p>
+                  </td>
+                  <td><strong>299 939,91 FCFA</strong></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td><img src="images/Sarita Limbu.jpg" alt="">Aayat Ali Khan</td>
+                  <td>Islamabad</td>
+                  <td>30 février 2023</td>
+                  <td>
+                    <p class="status pending">En attente</p>
+                  </td>
+                  <td><strong>733,80 FCFA</strong></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td><img src="images/Alex Gonley.jpg" alt="">Alson GC</td>
+                  <td>Dhaka</td>
+                  <td>22 décembre 2023</td>
+                  <td>
+                    <p class="status cancelled">Annulé</p>
+                  </td>
+                  <td><strong>499 692,52 FCFA</strong></td>
+                </tr>
+              </tbody>
+            </table>
+      
+          </section>
+        </main>
+      </div>
 
-                <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                  <label class="custom-file-label" for="validatedCustomFile">Choisissez l'image</label>
-                </div>
+    </div>
 
-                <button type="submit" class="btn btn-primary btn-style mt-4">Submet</button>
-
-              </form>
-            </div>
-          </div>
-          <!-- // -->
-          <!-- supported elements -->
-
-        </section>
-        <!-- //forms -->
   </section>
-  <!-- //forms  -->
 
-  </div>
-  <!-- //content -->
-
-  </div>
-  <!-- main content end-->
-  </section>
-  <!--footer section start-->
-  <footer class="dashboard">
-    <p>&copy 2023 FoodIvoire | Design by <a href="" target="_blank" class="text-primary">o</a></p>
-  </footer>
-  <!--footer section end-->
-  <!-- move top -->
-  <button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
-    <span class="fa fa-angle-up"></span>
-  </button>
   <script>
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {

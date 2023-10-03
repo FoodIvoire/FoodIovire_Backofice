@@ -87,20 +87,22 @@ Author URL: http://w3layouts.com
               <ul class="nofitications-dropdown">
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
-                      class="fa fa-bell-o"></i><span class="badge blue">3</span></a>
+                      class="fa fa-bell-o"></i><span class="badge blue">0</span></a>
                   <ul class="dropdown-menu">
                     <li>
                       <div class="notification_header">
                         <h3>Vous avez 3 nouvelles notifications</h3>
                       </div>
                     </li>
-                    <li><a href="#" class="grid">
+                    <li>
+                      <a href="#" class="grid">
                         <div class="user_img"><img src="assets/images/fabu.png" alt=""></div>
                         <div class="notification_desc">
                           <p>Johnson a acheté un modèle</p>
                           <span>À l'instant</span>
                         </div>
-                      </a></li>
+                      </a>
+                    </li>
                     <li class="odd"><a href="#" class="grid">
                         <div class="user_img"><img src="assets/images/mart.png" alt=""></div>
                         <div class="notification_desc">
@@ -124,7 +126,7 @@ Author URL: http://w3layouts.com
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
-                      class="fa fa-comment-o"></i><span class="badge blue">4</span></a>
+                      class="fa fa-comment-o"></i><span class="badge blue">0</span></a>
                   <ul class="dropdown-menu">
                     <li>
                       <div class="notification_header">
@@ -209,13 +211,19 @@ Author URL: http://w3layouts.com
             <li class="breadcrumb-item active" aria-current="page">Administration</li>
           </ol>
         </nav>
+
+        <button type="button" class="btn btn-primary btn-style" data-toggle="modal" data-target="#exampleModalCenter">
+          Ajouter un membre
+        </button>
+        <br>
+        <br>
         <section class="forms">
 
           <div class="card card_border py-2 mb-4">
-            <div class=""
+            <div data-toggle="modal" data-target="#exampleModalCenter" class=""
               style="background-color: #eee; cursor: pointer; border-radius: 15px; display: flex; justify-content: space-between; width: 98%; align-self: center; padding: 0.7%;">
               <div style="display: flex; justify-content: space-between;">
-                <div style="width: 55px; border-radius: 20px; height: 55px; background-color: orangered;">
+                <div style="width: 55px; border-radius: 20px; height: 55px;">
                   <img src="assets/images/fabu.png" class="rounded-circle" alt="" />
 
                 </div>
@@ -228,20 +236,23 @@ Author URL: http://w3layouts.com
                 </div>
 
               </div>
-              <div class="form-group">
-                <select class="custom-select" required>
-                  <option value="">Administrer</option>
+
+              <div class="">
+                <label for="inputState" class="input__label">Administrer</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Non Approuvé</option>
                   <option value="1">Approuvé</option>
                   <option value="2">Non Approuvé</option>
                 </select>
               </div>
+
             </div>
 
             <br>
-            <div class=""
+            <div data-toggle="modal" data-target="#exampleModalCenter" class=""
               style="background-color: #eee; cursor: pointer; border-radius: 15px; display: flex; justify-content: space-between; width: 98%; align-self: center; padding: 0.7%;">
               <div style="display: flex; justify-content: space-between;">
-                <div style="width: 55px; border-radius: 20px; height: 55px; background-color: green;">
+                <div style="width: 55px; border-radius: 20px; height: 55px;">
                   <img src="assets/images/brio.png" class="rounded-circle" alt="" />
 
                 </div>
@@ -254,12 +265,78 @@ Author URL: http://w3layouts.com
                 </div>
 
               </div>
-              <div class="form-group">
-                <select class="custom-select" required>
-                  <option value="">Administrer</option>
+              <div class="">
+                <label for="inputState" class="input__label">Administrer</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Approuvé</option>
                   <option value="1">Approuvé</option>
                   <option value="2">Non Approuvé</option>
                 </select>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Information sur cet membre</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+
+                  <form action="#" method="post">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4" class="input__label">Nom</label>
+                        <input type="text" class="form-control input-style" id="inputEmail1"
+                          placeholder="Nom du Restaurant">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4" class="input__label">Nom et Prénom</label>
+                        <input type="text" class="form-control input-style" id="inputPassword1"
+                          placeholder="Nom et Prénom">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4" class="input__label">E-mail</label>
+                        <input type="email" class="form-control input-style" id="inputEmail4" placeholder="E-mail">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4" class="input__label">Téléphone</label>
+                        <input type="tel" class="form-control input-style" id="inputPassword4"
+                          placeholder="Numéro de téléphone">
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity" class="input__label">Rôle</label>
+                        <input type="text" class="form-control input-style" id="inputCity"
+                          placeholder="Role de ce membre">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState" class="input__label">Administration</label>
+                        <select id="inputState" class="form-control input-style">
+                          <option selected>Non Approuvé</option>
+                          <option value="Non Approuvé">Non Approuvé</option>
+                          <option value="Approuvé">Approuvé</option>
+                        </select>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Supprimer</button>
+                  <button type="button" class="btn btn-success">Mettre à jours</button>
+                </div>
               </div>
             </div>
           </div>
