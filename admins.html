@@ -40,26 +40,27 @@ Author URL: http://w3layouts.com
       <div class="sidebar-menu-inner">
 
         <!-- sidebar nav start -->
-        <ul class="nav nav-pills nav-stacked custom-nav">
-          <li><a href="dasboard.html"><i class="fa fa-tachometer"></i><span> Tableau de bord</span></a>
-          </li>
-          <li>
-            <a href="command.html"><i class="fa fa-file-text"></i> <span>Commamdes</span></a>
-          </li>
-          <li class="active">
-            <a href="admins.html"><i class="fa fa-file-text"></i> <span>Administrateurs</span></a>
-          </li>
+          <ul class="nav nav-pills nav-stacked custom-nav">
+            <li><a href="dasboard.html"><i class="fa fa-tachometer"></i><span>Tableau de bord</span></a>
+            </li>
+            <li>
+              <a href="command.html"><i class="fa fa-th"></i> <span>Commamdes</span></a>
+            </li>
+            <li class="active">
+              <a href="admins.html"><i class="fa fa-cogs"></i> <span>Administrateurs</span></a>
+            </li>
+            <li>
+              <a href="client.html"><i class="lnr lnr-users"> </i> <span>Clients</span></a>
+            </li>
+            <li>
+              <a href="restaurant.html"><i class="lnr lnr-cart"> </i> <span>Restaurants</span></a>
+            </li>
+            <li>
+              <a href="livreur.html"><i class="fa fa-table"></i> <span>Service de livraison</span></a>
+            </li>
+          </ul>
 
-          <li>
-            <a href="client.html"><i class="fa fa-file-text"></i> <span>Clients</span></a>
-          </li>
-          <li>
-            <a href="restaurant.html"><i class="fa fa-file-text"></i> <span>Restaurants</span></a>
-          </li>
-          <li>
-            <a href="livreur.html"><i class="fa fa-file-text"></i> <span>Service de livraison</span></a>
-          </li>
-        </ul>
+
         <!-- //sidebar nav end -->
         <!-- toggle button start -->
         <a class="toggle-btn">
@@ -75,13 +76,7 @@ Author URL: http://w3layouts.com
 
       <div class="menu-right">
         <div class="navbar user-panel-top">
-          <div class="search-box">
-            <form action="#search-results.html" method="get">
-              <input class="search-input" placeholder="Rechercher ici..." type="search" id="search">
-              <button class="search-submit" value=""><span class="fa fa-search"></span></button>
-            </form>
-
-          </div>
+       
           <div class="user-dropdown-details d-flex">
             <div class="profile_details_left">
               <ul class="nofitications-dropdown">
@@ -201,6 +196,8 @@ Author URL: http://w3layouts.com
         </div>
       </div>
     </div>
+
+
     <div class="main-content">
 
       <div class="container-fluid content-top-gap">
@@ -212,7 +209,7 @@ Author URL: http://w3layouts.com
           </ol>
         </nav>
 
-        <button type="button" class="btn btn-primary btn-style" data-toggle="modal" data-target="#exampleModalCenter">
+        <button type="button" class="btn btn-primary btn-style" data-toggle="modal" data-target="#exampleModalCentera">
           Ajouter un membre
         </button>
         <br>
@@ -335,27 +332,83 @@ Author URL: http://w3layouts.com
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-danger" data-dismiss="modal">Supprimer</button>
-                  <button type="button" class="btn btn-success">Mettre à jours</button>
+                  <button type="button" class="btn btn-success">Modifier</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="modal fade" id="exampleModalCentera" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Information sur cet membre</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+
+                  <form action="#" method="post">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4" class="input__label">Nom</label>
+                        <input type="text" class="form-control input-style" id="inputEmail1"
+                          placeholder="Nom du Restaurant">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4" class="input__label">Nom et Prénom</label>
+                        <input type="text" class="form-control input-style" id="inputPassword1"
+                          placeholder="Nom et Prénom">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4" class="input__label">E-mail</label>
+                        <input type="email" class="form-control input-style" id="inputEmail4" placeholder="E-mail">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4" class="input__label">Téléphone</label>
+                        <input type="tel" class="form-control input-style" id="inputPassword4"
+                          placeholder="Numéro de téléphone">
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity" class="input__label">Rôle</label>
+                        <input type="text" class="form-control input-style" id="inputCity"
+                          placeholder="Role de ce membre">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState" class="input__label">Administration</label>
+                        <select id="inputState" class="form-control input-style">
+                          <option selected>Non Approuvé</option>
+                          <option value="Non Approuvé">Non Approuvé</option>
+                          <option value="Approuvé">Approuvé</option>
+                        </select>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success">Ajouter</button>
                 </div>
               </div>
             </div>
           </div>
         </section>
+      </div>
+    </div>
   </section>
 
-  </div>
-
-  </div>
-  </section>
-  <!--footer section start-->
-  <footer class="dashboard">
-    <p>&copy 2023 FoodIvoire | Design by <a href="" target="_blank" class="text-primary">o</a></p>
-  </footer>
-  <!--footer section end-->
-  <!-- move top -->
-  <button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
-    <span class="fa fa-angle-up"></span>
-  </button>
   <script>
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {

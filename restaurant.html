@@ -42,30 +42,29 @@ Author URL: http://w3layouts.com
 
       <div class="sidebar-menu-inner">
 
-        <!-- sidebar nav start -->
-        <ul class="nav nav-pills nav-stacked custom-nav">
-          <li><a href="dasboard.html"><i class="fa fa-tachometer"></i><span> Tableau de bord</span></a>
-          </li>
-          <li>
-            <a href="command.html"><i class="fa fa-file-text"></i> <span>Commamdes</span></a>
-          </li>
-          <li>
-            <a href="admins.html"><i class="fa fa-file-text"></i> <span>Administrateurs</span></a>
-          </li>
 
+        <ul class="nav nav-pills nav-stacked custom-nav">
+          <li><a href="dasboard.html"><i class="fa fa-tachometer"></i><span>Tableau de bord</span></a>
+          </li>
           <li>
-            <a href="client.html"><i class="fa fa-file-text"></i> <span>Clients</span></a>
+            <a href="command.html"><i class="fa fa-th"></i> <span>Commamdes</span></a>
+          </li>
+          <li>
+            <a href="admins.html"><i class="fa fa-cogs"></i> <span>Administrateurs</span></a>
+          </li>
+          <li>
+            <a href="client.html"><i class="lnr lnr-users"> </i> <span>Clients</span></a>
           </li>
           <li class="active">
-            <a href="restaurant.html"><i class="fa fa-file-text"></i> <span>Restaurants</span></a>
+            <a href="restaurant.html"><i class="lnr lnr-cart"> </i> <span>Restaurants</span></a>
           </li>
           <li>
-            <a href="livreur.html"><i class="fa fa-file-text"></i> <span>Service de livraison</span></a>
+            <a href="livreur.html"><i class="fa fa-table"></i> <span>Service de livraison</span></a>
           </li>
-
         </ul>
-        <!-- //sidebar nav end -->
-        <!-- toggle button start -->
+
+
+
         <a class="toggle-btn">
           <i class="fa fa-angle-double-left menu-collapsed__left"><span>Réduire la barre latérale</span></i>
           <i class="fa fa-angle-double-right menu-collapsed__right"></i>
@@ -302,9 +301,110 @@ Author URL: http://w3layouts.com
                   <div class="col-lg-6 col-md-12">
                     <div class="order-details">
                       <h3 class="title">Image du Restaurant</h3>
-                    
-                      <div class="order-table table-responsive"  id="imageContainer" style="width: 420px; height: 430px; border-radius: 20px; overflow: hidden; justify-content: center; align-items: center;">
-                        <img id="selectedImage" alt="Selected Image" style="width: 100%; height: 100%; align-items: stretch; justify-content: center;">
+
+                      <div class="order-table table-responsive" id="imageContainer"
+                        style="width: 420px; height: 430px; border-radius: 20px; overflow: hidden; justify-content: center; align-items: center;">
+                        <img id="selectedImage" alt="Selected Image"
+                          style="width: 100%; height: 100%; align-items: stretch; justify-content: center;">
+                      </div>
+                      <div class="order-table table-responsive">
+                        <input type="file" accept="image/*" onchange="displayImage(event)" id="imageInput">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Ajouter</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="modal fade productsQuickView" id="exampleModalCentera" tabindex="-1" role="dialog"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="bx bx-x"></i></span>
+              </button>
+              <form>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="billing-details">
+                      <h3 class="title">Détails du restaurant</h3>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                          <div class="form-group">
+                            <label>Nom du restaurant<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="addarticle">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="form-group">
+                            <label>Nom de la Vendeuse<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="addquant">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="form-group">
+                            <label>Ville<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="addprixpro">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="form-group">
+                            <label>Commune<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="addprix">
+                          </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6">
+                          <div class="form-group">
+                            <label>Adresse precis<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="addfour">
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                          <div class="form-group">
+                            <label>Téléphone <span class="required">*</span></label>
+                            <input type="tel" class="form-control" id="addphone">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="">
+                            <label for="inputState" class="input__label">Statut</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Open</option>
+                              <option value="Non Disponible">Non Disponible</option>
+                              <option value="Fermé">Fermé</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12">
+                          <div class="form-group">
+                            <textarea name="notes" id="notes" cols="30" rows="5" placeholder="Notes"
+                              class="form-control"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="order-details">
+                      <h3 class="title">Image du Restaurant</h3>
+
+                      <div class="order-table table-responsive" id="imageContainer"
+                        style="width: 420px; height: 430px; border-radius: 20px; overflow: hidden; justify-content: center; align-items: center;">
+                        <img id="selectedImage" alt="Selected Image"
+                          style="width: 100%; height: 100%; align-items: stretch; justify-content: center;">
                       </div>
                       <div class="order-table table-responsive">
                         <input type="file" accept="image/*" onchange="displayImage(event)" id="imageInput">
@@ -316,13 +416,12 @@ Author URL: http://w3layouts.com
               </form>
               <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Supprimer</button>
-                <button type="button" class="btn btn-success" data-dismiss="modal">Ajouter</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Modifer</button>
               </div>
 
             </div>
           </div>
         </div>
-
 
         <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
           aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -354,6 +453,9 @@ Author URL: http://w3layouts.com
         <main class="table">
           <section class="table__header">
             <h1>Restaurant</h1>
+            <button type="submit" class="btn btn-primary btn-style mt-4" data-toggle="modal"
+              data-target="#exampleModalCenter">Ajouter Restaurant</button>
+
           </section>
           <section class="table__body">
             <table>
@@ -368,7 +470,7 @@ Author URL: http://w3layouts.com
                 </tr>
               </thead>
               <tbody>
-                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCentera">
                   <td>
                     <img src="images/Zinzu Chan Lee.jpg" alt="">Beni Food
                   </td>
@@ -381,7 +483,7 @@ Author URL: http://w3layouts.com
                   </td>
                   <td><strong>0709283152</strong></td>
                 </tr>
-                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCentera">
                   <td><img src="images/Jeet Saru.jpg" alt="">Lola</td>
                   <td>Jeet Saru</td>
                   <td>Abidjan</td>
@@ -391,7 +493,7 @@ Author URL: http://w3layouts.com
                   </td>
                   <td><strong>0553000000</strong></td>
                 </tr>
-                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCentera">
                   <td><img src="images/Sonal Gharti.jpg" alt="">Chawarma +</td>
                   <td>Sonal Gharti</td>
                   <td>Abidjan</td>
@@ -401,7 +503,7 @@ Author URL: http://w3layouts.com
                   </td>
                   <td><strong>4545454545</strong></td>
                 </tr>
-                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCentera">
                   <td><img src="images/Alson GC.jpg" alt="">Resto A</td>
                   <td>Vendeuse A</td>
                   <td>Abidjan</td>
@@ -411,7 +513,7 @@ Author URL: http://w3layouts.com
                   </td>
                   <td><strong>4545454545</strong></td>
                 </tr>
-                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCentera">
                   <td><img src="images/Sarita Limbu.jpg" alt="">Resto B</td>
                   <td>Vendeuse B</td>
                   <td>Abidjan</td>
@@ -421,7 +523,7 @@ Author URL: http://w3layouts.com
                   </td>
                   <td><strong>83738473833</strong></td>
                 </tr>
-                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCentera">
                   <td><img src="images/Alex Gonley.jpg" alt="">Resto C</td>
                   <td>Vendeuse C</td>
                   <td>Abidjan</td>
@@ -431,7 +533,7 @@ Author URL: http://w3layouts.com
                   </td>
                   <td><strong>04034856848</strong></td>
                 </tr>
-                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCentera">
                   <td><img src="images/Alson GC.jpg" alt="">Resto D</td>
                   <td>Vendeuse D</td>
                   <td>Abidjan</td>
@@ -441,7 +543,7 @@ Author URL: http://w3layouts.com
                   </td>
                   <td><strong>45454545454</strong></td>
                 </tr>
-                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCentera">
                   <td><img src="images/Sarita Limbu.jpg" alt="">Resto E</td>
                   <td>Vendeuse E</td>
                   <td>Abidjan</td>
@@ -451,7 +553,7 @@ Author URL: http://w3layouts.com
                   </td>
                   <td><strong>35434343434</strong></td>
                 </tr>
-                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCentera">
                   <td><img src="images/Alex Gonley.jpg" alt="">Resto F</td>
                   <td>Vendeuse F</td>
                   <td>Abidjan</td>
@@ -465,6 +567,7 @@ Author URL: http://w3layouts.com
             </table>
 
           </section>
+        </main>
       </div>
     </div>
   </section>
