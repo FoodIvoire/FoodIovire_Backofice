@@ -4,15 +4,15 @@ new Chart(document.getElementById("linechart"), {
 		labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
 		datasets: [{
 			label: 'Utilisateur',
-			backgroundColor: window.chartColors.navy,
-			borderColor: window.chartColors.navy,
+			backgroundColor: "#20c997",
+			borderColor: "#28a745",
 			data: [0,0,0,0,0,0,0,0],
 			fill: false,
 		}, {
 			label: 'Commandes',
 			fill: false,
-			backgroundColor: window.chartColors.purple,
-			borderColor: window.chartColors.purple,
+			backgroundColor: "#ffc107",
+			borderColor: "#fd7e14",
 			data: [10,40,20,35,25,50,10,70],
 		}]
 	},
