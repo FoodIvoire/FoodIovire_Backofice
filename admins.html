@@ -1,3 +1,7 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
 <!doctype html>
 <html lang="en">
 
@@ -6,7 +10,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Food Ivoire Back Ofice</title>
+  <title>Food Ivoire Back Office</title>
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
@@ -28,22 +32,24 @@
       </div>
 
 
-
       <div class="logo-icon text-center">
         <a href="dasboard.html" title="logo"><img src="assets/images/icon.png" alt="logo-icon"> </a>
       </div>
+      <!-- //logo end -->
 
       <div class="sidebar-menu-inner">
 
+        <!-- sidebar nav start -->
         <ul class="nav nav-pills nav-stacked custom-nav">
-          <li class="active"><a href="dasboard.html"><i class="fa fa-tachometer"></i><span>Tableau de bord</span></a>
+          <li><a href="dasboard.html"><i class="fa fa-tachometer"></i><span> Tableau de bord</span></a>
           </li>
           <li>
             <a href="command.html"><i class="fa fa-file-text"></i> <span>Commamdes</span></a>
           </li>
-          <li>
+          <li class="active">
             <a href="admins.html"><i class="fa fa-file-text"></i> <span>Administrateurs</span></a>
           </li>
+
           <li>
             <a href="client.html"><i class="fa fa-file-text"></i> <span>Clients</span></a>
           </li>
@@ -54,21 +60,27 @@
             <a href="livreur.html"><i class="fa fa-file-text"></i> <span>Service de livraison</span></a>
           </li>
         </ul>
+        <!-- //sidebar nav end -->
+        <!-- toggle button start -->
         <a class="toggle-btn">
           <i class="fa fa-angle-double-left menu-collapsed__left"><span>Réduire la barre latérale</span></i>
           <i class="fa fa-angle-double-right menu-collapsed__right"></i>
         </a>
+        <!-- //toggle button end -->
       </div>
     </div>
+    <!-- //sidebar menu end -->
+    <!-- header-starts -->
     <div class="header sticky-header">
 
       <div class="menu-right">
         <div class="navbar user-panel-top">
           <div class="search-box">
-            <form action="#resultats-recherche.html" method="get">
+            <form action="#search-results.html" method="get">
               <input class="search-input" placeholder="Rechercher ici..." type="search" id="search">
               <button class="search-submit" value=""><span class="fa fa-search"></span></button>
             </form>
+
           </div>
           <div class="user-dropdown-details d-flex">
             <div class="profile_details_left">
@@ -186,212 +198,81 @@
 
         </div>
       </div>
-      <!--notification menu end -->
     </div>
-    <!-- //header-ends -->
-    <!-- main content start -->
     <div class="main-content">
 
-      <!-- content -->
       <div class="container-fluid content-top-gap">
 
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" class="mb-4">
           <ol class="breadcrumb my-breadcrumb">
-            <li class="breadcrumb-item"><a href="dasboard.html">Accueil</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Tableau de bord</li>
+            <li class="breadcrumb-item"><a href="dasboard.html">Admin</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Administration</li>
           </ol>
         </nav>
-        <div class="welcome-msg pt-3 pb-4">
-          <h1>Bonjour <span class="text-primary">Altes</span>, Bienvenue</h1>
-          <p>Administrateur très détaillé et complet.</p>
-        </div>
+        <section class="forms">
 
+          <div class="card card_border py-2 mb-4">
+            <div class=""
+              style="background-color: #eee; cursor: pointer; border-radius: 15px; display: flex; justify-content: space-between; width: 98%; align-self: center; padding: 0.7%;">
+              <div style="display: flex; justify-content: space-between;">
+                <div style="width: 55px; border-radius: 20px; height: 55px; background-color: orangered;">
+                  <img src="assets/images/fabu.png" class="rounded-circle" alt="" />
 
-        <!-- statistics data -->
-        <div class="statistics">
-          <div class="row">
-            <div class="col-xl-6 pr-xl-2">
-              <div class="row">
-                <div class="col-sm-6 pr-sm-2 statistics-grid">
-                  <div class="card card_border border-primary-top p-4">
-                    <i class="lnr lnr-cloud-download"> </i>
-                    <h3 class="text-primary number">29,75 M</h3>
-                    <p class="stat-text">Utilisateurs au total</p>
-                  </div>
                 </div>
-                <div class="col-sm-6 pl-sm-2 statistics-grid">
-                  <div class="card card_border border-primary-top p-4">
-                    <i class="lnr lnr-eye"> </i>
-                    <h3 class="text-secondary number">51,25 K</h3>
-                    <p class="stat-text">Visiteurs quotidiens</p>
-                  </div>
+                <div style="width: 25px;">
                 </div>
-              </div>
-            </div>
-            <div class="col-xl-6 pl-xl-2">
-              <div class="row">
-                <div class="col-sm-6 pr-sm-2 statistics-grid">
-                  <div class="card card_border border-primary-top p-4">
-                    <i class="lnr lnr-users"> </i>
-                    <h3 class="text-success number">166,89 M</h3>
-                    <p class="stat-text">Vendeuse</p>
-                  </div>
-                </div>
-                <div class="col-sm-6 pl-sm-2 statistics-grid">
-                  <div class="card card_border border-primary-top p-4">
-                    <i class="lnr lnr-cart"> </i>
-                    <h3 class="text-danger number">1 250k</h3>
-                    <p class="stat-text">Achats</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- //statistics data -->
-
-        <!-- charts -->
-        <div class="chart">
-          <div class="row">
-            <div class="col-lg-6 pr-lg-2 chart-grid">
-              <div class="card text-center card_border">
-                <div class="card-header chart-grid__header">
-                  Bar de Chart D'analyse
-                </div>
-                <div class="card-body">
-                  <!-- bar chart -->
-                  <div id="container">
-                    <canvas id="barchart"></canvas>
-                  </div>
-                  <!-- //bar chart -->
-                </div>
-                <div class="card-footer text-muted chart-grid__footer">
-                  Mis à jour il y a 2 heures
+                <div>
+                  <p style="color: black; font-size: large;">Shevonda Lanell</p>
+                  <p style="">Service Relationnel</p>
+                  <p style="color: orangered;">Non Approuvé</p>
                 </div>
 
               </div>
+              <div class="form-group">
+                <select class="custom-select" required>
+                  <option value="">Administrer</option>
+                  <option value="1">Approuvé</option>
+                  <option value="2">Non Approuvé</option>
+                </select>
+              </div>
             </div>
-            <div class="col-lg-6 pl-lg-2 chart-grid">
-              <div class="card text-center card_border">
-                <div class="card-header chart-grid__header">
-                  Line de Chart D'analyse
+
+            <br>
+            <div class=""
+              style="background-color: #eee; cursor: pointer; border-radius: 15px; display: flex; justify-content: space-between; width: 98%; align-self: center; padding: 0.7%;">
+              <div style="display: flex; justify-content: space-between;">
+                <div style="width: 55px; border-radius: 20px; height: 55px; background-color: green;">
+                  <img src="assets/images/brio.png" class="rounded-circle" alt="" />
+
                 </div>
-                <div class="card-body">
-                  <!-- line chart -->
-                  <div id="container">
-                    <canvas id="linechart"></canvas>
-                  </div>
-                  <!-- //line chart -->
+                <div style="width: 25px;">
                 </div>
-                <div class="card-footer text-muted chart-grid__footer">
-                  Mis à jour à l'instant
+                <div>
+                  <p style="color: black; font-size: large;">Agnimel Ates</p>
+                  <p style="">Manageur</p>
+                  <p style="color: green;">Approuvé</p>
                 </div>
 
+              </div>
+              <div class="form-group">
+                <select class="custom-select" required>
+                  <option value="">Administrer</option>
+                  <option value="1">Approuvé</option>
+                  <option value="2">Non Approuvé</option>
+                </select>
               </div>
             </div>
           </div>
-        </div>
-        <!-- //charts -->
+        </section>
+  </section>
 
-        <!-- chatting -->
-        <div class="data-tables">
-          <div class="row">
-            <div class="col-lg-12 chart-grid mb-4">
-              <div class="card card_border p-4">
-                <div class="card-header chart-grid__header pl-0 pt-0">
-                  Conversation
-                </div>
-                <div class="messaging">
-                  <div class="inbox_msg">
-                    <div class="inbox_people">
-                      <div class="headind_srch">
-                        <div class="srch_bar">
-                          <div class="stylish-input-group">
-                            <input type="text" class="search-bar" placeholder="Chercher une conversation">
-                            <span class="input-group-addon">
-                              <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="inbox_chat">
-                        <div class="chat_list active_chat">
-                          <div class="chat_people">
-                            <div class="chat_img"> <img src="assets/images/victor.png" alt="Victo" class="img-fluid">
-                            </div>
-                            <div class="chat_ib">
-                              <h5>Victor Cuvot <span class="chat_date">il y a 2 heures</span></h5>
-                              <p>Bien voyons ce que on a faire.</p>
-                            </div>
-                          </div>
-                        </div>
+  </div>
 
-                      </div>
-                    </div>
-                    <div class="mesgs">
-                      <div class="msg_history">
-                        <div class="incoming_msg">
-                          <div class="incoming_msg_img"> <img src="assets/images/victor.png" alt="Victor"
-                              class="img-fluid"> </div>
-                          <div class="received_msg">
-                            <div class="received_withd_msg">
-                              <p>Mdr mon pote, quoi de neuf ?</p>
-                              <span class="time_date"> 10:05 AM | 9 mars</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="outgoing_msg">
-                          <div class="sent_msg">
-                            <p>Ouais, je suis là mon pote ! Tout va bien 😎😎😎💪🏼.</p>
-                            <span class="time_date"> 12:15 PM | 9 mars</span>
-                          </div>
-                        </div>
-                        <div class="outgoing_msg">
-                          <div class="sent_msg">
-                            <p>Et toi ?</p>
-                            <span class="time_date"> 12:15 PM | 9 mars</span>
-                          </div>
-                        </div>
-                        <div class="incoming_msg">
-                          <div class="incoming_msg_img"> <img src="assets/images/victor.png" alt="Victor"
-                              class="img-fluid"> </div>
-                          <div class="received_msg">
-                            <div class="received_withd_msg">
-                              <p>Percentage from client not vendose</p>
-                              <span class="time_date"> 09:16 AM | Hier</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="type_msg">
-                        <div class="input_msg_write">
-                          <input type="text" class="write_msg" placeholder="Écrivez un message" />
-                          <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o"
-                              aria-hidden="true"></i></button>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- //chatting -->
-
-        <!-- //accordions -->
-
-
-      </div>
-      <!-- //content -->
-    </div>
-    <!-- main content end-->
+  </div>
   </section>
   <!--footer section start-->
   <footer class="dashboard">
-    <p>&copy 2023 Dasdboard | Design by <a href="/" target="_blank" class="text-primary">o</a></p>
+    <p>&copy 2023 FoodIvoire | Design by <a href="" target="_blank" class="text-primary">o</a></p>
   </footer>
   <!--footer section end-->
   <!-- move top -->
@@ -473,6 +354,7 @@
 
   <!-- Bootstrap Core JavaScript -->
   <script src="assets/js/bootstrap.min.js"></script>
+
 
 </body>
 

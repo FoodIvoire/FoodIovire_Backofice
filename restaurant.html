@@ -1,3 +1,7 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
 <!doctype html>
 <html lang="en">
 
@@ -6,7 +10,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Food Ivoire Back Ofice</title>
+  <title>Food Ivoire Back Office</title>
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
@@ -28,47 +32,56 @@
       </div>
 
 
-
       <div class="logo-icon text-center">
         <a href="dasboard.html" title="logo"><img src="assets/images/icon.png" alt="logo-icon"> </a>
       </div>
+      <!-- //logo end -->
 
       <div class="sidebar-menu-inner">
 
+        <!-- sidebar nav start -->
         <ul class="nav nav-pills nav-stacked custom-nav">
-          <li class="active"><a href="dasboard.html"><i class="fa fa-tachometer"></i><span>Tableau de bord</span></a>
+          <li><a href="dasboard.html"><i class="fa fa-tachometer"></i><span> Tableau de bord</span></a>
           </li>
           <li>
-            <a href="command.html"><i class="fa fa-file-text"></i> <span>Commamdes</span></a>
+          <a href="command.html"><i class="fa fa-file-text"></i> <span>Commamdes</span></a>
           </li>
           <li>
             <a href="admins.html"><i class="fa fa-file-text"></i> <span>Administrateurs</span></a>
           </li>
+
           <li>
             <a href="client.html"><i class="fa fa-file-text"></i> <span>Clients</span></a>
           </li>
-          <li>
+          <li  class="active">
             <a href="restaurant.html"><i class="fa fa-file-text"></i> <span>Restaurants</span></a>
           </li>
           <li>
             <a href="livreur.html"><i class="fa fa-file-text"></i> <span>Service de livraison</span></a>
           </li>
+
         </ul>
+        <!-- //sidebar nav end -->
+        <!-- toggle button start -->
         <a class="toggle-btn">
           <i class="fa fa-angle-double-left menu-collapsed__left"><span>Réduire la barre latérale</span></i>
           <i class="fa fa-angle-double-right menu-collapsed__right"></i>
         </a>
+        <!-- //toggle button end -->
       </div>
     </div>
+    <!-- //sidebar menu end -->
+    <!-- header-starts -->
     <div class="header sticky-header">
 
       <div class="menu-right">
         <div class="navbar user-panel-top">
           <div class="search-box">
-            <form action="#resultats-recherche.html" method="get">
+            <form action="#search-results.html" method="get">
               <input class="search-input" placeholder="Rechercher ici..." type="search" id="search">
               <button class="search-submit" value=""><span class="fa fa-search"></span></button>
             </form>
+
           </div>
           <div class="user-dropdown-details d-flex">
             <div class="profile_details_left">
@@ -195,203 +208,122 @@
       <!-- content -->
       <div class="container-fluid content-top-gap">
 
-        <nav aria-label="breadcrumb">
+        <!-- breadcrumbs -->
+        <nav aria-label="breadcrumb" class="mb-4">
           <ol class="breadcrumb my-breadcrumb">
-            <li class="breadcrumb-item"><a href="dasboard.html">Accueil</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Tableau de bord</li>
+            <li class="breadcrumb-item"><a href="dasboard.html">Admin</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Restaurant</li>
           </ol>
         </nav>
-        <div class="welcome-msg pt-3 pb-4">
-          <h1>Bonjour <span class="text-primary">Altes</span>, Bienvenue</h1>
-          <p>Administrateur très détaillé et complet.</p>
-        </div>
+        <!-- //breadcrumbs -->
+        <!-- forms -->
+        <section class="forms">
+          <!-- forms 1 -->
 
-
-        <!-- statistics data -->
-        <div class="statistics">
-          <div class="row">
-            <div class="col-xl-6 pr-xl-2">
-              <div class="row">
-                <div class="col-sm-6 pr-sm-2 statistics-grid">
-                  <div class="card card_border border-primary-top p-4">
-                    <i class="lnr lnr-cloud-download"> </i>
-                    <h3 class="text-primary number">29,75 M</h3>
-                    <p class="stat-text">Utilisateurs au total</p>
+          <!-- forms 2 -->
+          <div class="card card_border py-2 mb-4">
+            <div class="card-body">
+              <form action="#" method="post">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4" class="input__label">Nom du Restaurant</label>
+                    <input type="text" class="form-control input-style" id="inputEmail1"
+                      placeholder="Nom du Restaurant">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4" class="input__label">Nom de la vendeuse</label>
+                    <input type="text" class="form-control input-style" id="inputPassword1"
+                      placeholder="Nom de la vendeuse">
                   </div>
                 </div>
-                <div class="col-sm-6 pl-sm-2 statistics-grid">
-                  <div class="card card_border border-primary-top p-4">
-                    <i class="lnr lnr-eye"> </i>
-                    <h3 class="text-secondary number">51,25 K</h3>
-                    <p class="stat-text">Visiteurs quotidiens</p>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4" class="input__label">E-mail</label>
+                    <input type="email" class="form-control input-style" id="inputEmail4" placeholder="E-mail">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4" class="input__label">Téléphone</label>
+                    <input type="tel" class="form-control input-style" id="inputPassword4"
+                      placeholder="Numéro de téléphone">
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-xl-6 pl-xl-2">
-              <div class="row">
-                <div class="col-sm-6 pr-sm-2 statistics-grid">
-                  <div class="card card_border border-primary-top p-4">
-                    <i class="lnr lnr-users"> </i>
-                    <h3 class="text-success number">166,89 M</h3>
-                    <p class="stat-text">Vendeuse</p>
-                  </div>
+                <div class="form-group">
+                  <label for="inputAddress" class="input__label">Adresse</label>
+                  <input type="text" class="form-control input-style" id="inputAddress"
+                    placeholder="1234 Rue principale">
                 </div>
-                <div class="col-sm-6 pl-sm-2 statistics-grid">
-                  <div class="card card_border border-primary-top p-4">
-                    <i class="lnr lnr-cart"> </i>
-                    <h3 class="text-danger number">1 250k</h3>
-                    <p class="stat-text">Achats</p>
-                  </div>
+                <div class="form-group">
+                  <label for="inputAddress2" class="input__label">Adresse 2</label>
+                  <input type="text" class="form-control input-style" id="inputAddress2"
+                    placeholder="Appartement, studio, étage">
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity" class="input__label">Ville</label>
+                    <input type="text" class="form-control input-style" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState" class="input__label">Commune</label>
+                    <input type="text" class="form-control input-style" id="inputState">
 
-        <!-- //statistics data -->
-
-        <!-- charts -->
-        <div class="chart">
-          <div class="row">
-            <div class="col-lg-6 pr-lg-2 chart-grid">
-              <div class="card text-center card_border">
-                <div class="card-header chart-grid__header">
-                  Bar de Chart D'analyse
-                </div>
-                <div class="card-body">
-                  <!-- bar chart -->
-                  <div id="container">
-                    <canvas id="barchart"></canvas>
                   </div>
-                  <!-- //bar chart -->
-                </div>
-                <div class="card-footer text-muted chart-grid__footer">
-                  Mis à jour il y a 2 heures
+                  <div class="form-group col-md-2">
+                    <label for="inputZip" class="input__label">Code postal</label>
+                    <input type="text" class="form-control input-style" id="inputZip">
+                  </div>
                 </div>
 
-              </div>
-            </div>
-            <div class="col-lg-6 pl-lg-2 chart-grid">
-              <div class="card text-center card_border">
-                <div class="card-header chart-grid__header">
-                  Line de Chart D'analyse
-                </div>
-                <div class="card-body">
-                  <!-- line chart -->
-                  <div id="container">
-                    <canvas id="linechart"></canvas>
-                  </div>
-                  <!-- //line chart -->
-                </div>
-                <div class="card-footer text-muted chart-grid__footer">
-                  Mis à jour à l'instant
-                </div>
-
-              </div>
+                <button type="submit" class="btn btn-primary btn-style mt-4">Créer</button>
+              </form>
             </div>
           </div>
-        </div>
-        <!-- //charts -->
 
-        <!-- chatting -->
-        <div class="data-tables">
-          <div class="row">
-            <div class="col-lg-12 chart-grid mb-4">
-              <div class="card card_border p-4">
-                <div class="card-header chart-grid__header pl-0 pt-0">
-                  Conversation
+          <!-- //forms 2 -->
+
+          <!-- supported elements -->
+          <!--  -->
+          <div class="card card_border py-2 mb-4">
+            <div class="cards__heading">
+              <h3>Ajouter des images <span></span></h3>
+            </div>
+            <div class="card-body">
+              <form class="was-validated">
+                <div class="form-group">
+                  <select class="custom-select input-style" required>
+                    <option value="">Selectionez le restaurant</option>
+                    <option value="1">Beni Food</option>
+                    <option value="2">Lola Café</option>
+                    <option value="3">Chawarma +</option>
+                  </select>
                 </div>
-                <div class="messaging">
-                  <div class="inbox_msg">
-                    <div class="inbox_people">
-                      <div class="headind_srch">
-                        <div class="srch_bar">
-                          <div class="stylish-input-group">
-                            <input type="text" class="search-bar" placeholder="Chercher une conversation">
-                            <span class="input-group-addon">
-                              <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="inbox_chat">
-                        <div class="chat_list active_chat">
-                          <div class="chat_people">
-                            <div class="chat_img"> <img src="assets/images/victor.png" alt="Victo" class="img-fluid">
-                            </div>
-                            <div class="chat_ib">
-                              <h5>Victor Cuvot <span class="chat_date">il y a 2 heures</span></h5>
-                              <p>Bien voyons ce que on a faire.</p>
-                            </div>
-                          </div>
-                        </div>
 
-                      </div>
-                    </div>
-                    <div class="mesgs">
-                      <div class="msg_history">
-                        <div class="incoming_msg">
-                          <div class="incoming_msg_img"> <img src="assets/images/victor.png" alt="Victor"
-                              class="img-fluid"> </div>
-                          <div class="received_msg">
-                            <div class="received_withd_msg">
-                              <p>Mdr mon pote, quoi de neuf ?</p>
-                              <span class="time_date"> 10:05 AM | 9 mars</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="outgoing_msg">
-                          <div class="sent_msg">
-                            <p>Ouais, je suis là mon pote ! Tout va bien 😎😎😎💪🏼.</p>
-                            <span class="time_date"> 12:15 PM | 9 mars</span>
-                          </div>
-                        </div>
-                        <div class="outgoing_msg">
-                          <div class="sent_msg">
-                            <p>Et toi ?</p>
-                            <span class="time_date"> 12:15 PM | 9 mars</span>
-                          </div>
-                        </div>
-                        <div class="incoming_msg">
-                          <div class="incoming_msg_img"> <img src="assets/images/victor.png" alt="Victor"
-                              class="img-fluid"> </div>
-                          <div class="received_msg">
-                            <div class="received_withd_msg">
-                              <p>Percentage from client not vendose</p>
-                              <span class="time_date"> 09:16 AM | Hier</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="type_msg">
-                        <div class="input_msg_write">
-                          <input type="text" class="write_msg" placeholder="Écrivez un message" />
-                          <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o"
-                              aria-hidden="true"></i></button>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                  <label class="custom-file-label" for="validatedCustomFile">Choisissez l'image</label>
                 </div>
-              </div>
+
+                <button type="submit" class="btn btn-primary btn-style mt-4">Submet</button>
+
+              </form>
             </div>
           </div>
-        </div>
-        <!-- //chatting -->
+          <!-- // -->
+          <!-- supported elements -->
 
-        <!-- //accordions -->
+        </section>
+        <!-- //forms -->
+  </section>
+  <!-- //forms  -->
 
+  </div>
+  <!-- //content -->
 
-      </div>
-      <!-- //content -->
-    </div>
-    <!-- main content end-->
+  </div>
+  <!-- main content end-->
   </section>
   <!--footer section start-->
   <footer class="dashboard">
-    <p>&copy 2023 Dasdboard | Design by <a href="/" target="_blank" class="text-primary">o</a></p>
+    <p>&copy 2023 FoodIvoire | Design by <a href="" target="_blank" class="text-primary">o</a></p>
   </footer>
   <!--footer section end-->
   <!-- move top -->
@@ -473,6 +405,7 @@
 
   <!-- Bootstrap Core JavaScript -->
   <script src="assets/js/bootstrap.min.js"></script>
+
 
 </body>
 
