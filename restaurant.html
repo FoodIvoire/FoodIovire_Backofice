@@ -14,6 +14,9 @@ Author URL: http://w3layouts.com
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="noble.css">
   <link rel="icon" type="image/png" href="assets/images/icon.png">
 
   <!-- google fonts -->
@@ -44,7 +47,7 @@ Author URL: http://w3layouts.com
           <li><a href="dasboard.html"><i class="fa fa-tachometer"></i><span> Tableau de bord</span></a>
           </li>
           <li>
-          <a href="command.html"><i class="fa fa-file-text"></i> <span>Commamdes</span></a>
+            <a href="command.html"><i class="fa fa-file-text"></i> <span>Commamdes</span></a>
           </li>
           <li>
             <a href="admins.html"><i class="fa fa-file-text"></i> <span>Administrateurs</span></a>
@@ -53,7 +56,7 @@ Author URL: http://w3layouts.com
           <li>
             <a href="client.html"><i class="fa fa-file-text"></i> <span>Clients</span></a>
           </li>
-          <li  class="active">
+          <li class="active">
             <a href="restaurant.html"><i class="fa fa-file-text"></i> <span>Restaurants</span></a>
           </li>
           <li>
@@ -215,121 +218,257 @@ Author URL: http://w3layouts.com
             <li class="breadcrumb-item active" aria-current="page">Restaurant</li>
           </ol>
         </nav>
-        <!-- //breadcrumbs -->
-        <!-- forms -->
-        <section class="forms">
-          <!-- forms 1 -->
 
-          <!-- forms 2 -->
-          <div class="card card_border py-2 mb-4">
-            <div class="card-body">
-              <form action="#" method="post">
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail4" class="input__label">Nom du Restaurant</label>
-                    <input type="text" class="form-control input-style" id="inputEmail1"
-                      placeholder="Nom du Restaurant">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputPassword4" class="input__label">Nom de la vendeuse</label>
-                    <input type="text" class="form-control input-style" id="inputPassword1"
-                      placeholder="Nom de la vendeuse">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail4" class="input__label">E-mail</label>
-                    <input type="email" class="form-control input-style" id="inputEmail4" placeholder="E-mail">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputPassword4" class="input__label">Téléphone</label>
-                    <input type="tel" class="form-control input-style" id="inputPassword4"
-                      placeholder="Numéro de téléphone">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputAddress" class="input__label">Adresse</label>
-                  <input type="text" class="form-control input-style" id="inputAddress"
-                    placeholder="1234 Rue principale">
-                </div>
-                <div class="form-group">
-                  <label for="inputAddress2" class="input__label">Adresse 2</label>
-                  <input type="text" class="form-control input-style" id="inputAddress2"
-                    placeholder="Appartement, studio, étage">
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputCity" class="input__label">Ville</label>
-                    <input type="text" class="form-control input-style" id="inputCity">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label for="inputState" class="input__label">Commune</label>
-                    <input type="text" class="form-control input-style" id="inputState">
 
+
+
+
+
+
+
+
+
+
+        <div class="modal fade productsQuickView" id="exampleModalCenter" tabindex="-1" role="dialog"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="bx bx-x"></i></span>
+              </button>
+              <form>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="billing-details">
+                      <h3 class="title">Détails du restaurant</h3>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                          <div class="form-group">
+                            <label>Nom du restaurant<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="addarticle">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="form-group">
+                            <label>Nom de la Vendeuse<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="addquant">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="form-group">
+                            <label>Ville<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="addprixpro">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="form-group">
+                            <label>Commune<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="addprix">
+                          </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6">
+                          <div class="form-group">
+                            <label>Adresse precis<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="addfour">
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                          <div class="form-group">
+                            <label>Téléphone <span class="required">*</span></label>
+                            <input type="tel" class="form-control" id="addphone">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="">
+                            <label for="inputState" class="input__label">Statut</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Open</option>
+                              <option value="Non Disponible">Non Disponible</option>
+                              <option value="Fermé">Fermé</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12">
+                          <div class="form-group">
+                            <textarea name="notes" id="notes" cols="30" rows="5" placeholder="Notes"
+                              class="form-control"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group col-md-2">
-                    <label for="inputZip" class="input__label">Code postal</label>
-                    <input type="text" class="form-control input-style" id="inputZip">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="order-details">
+                      <h3 class="title">Image du Restaurant</h3>
+                    
+                      <div class="order-table table-responsive"  id="imageContainer" style="width: 420px; height: 430px; border-radius: 20px; overflow: hidden; justify-content: center; align-items: center;">
+                        <img id="selectedImage" alt="Selected Image" style="width: 100%; height: 100%; align-items: stretch; justify-content: center;">
+                      </div>
+                      <div class="order-table table-responsive">
+                        <input type="file" accept="image/*" onchange="displayImage(event)" id="imageInput">
+
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                <button type="submit" class="btn btn-primary btn-style mt-4">Créer</button>
               </form>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Supprimer</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Ajouter</button>
+              </div>
+
             </div>
           </div>
+        </div>
 
-          <!-- //forms 2 -->
 
-          <!-- supported elements -->
-          <!--  -->
-          <div class="card card_border py-2 mb-4">
-            <div class="cards__heading">
-              <h3>Ajouter des images <span></span></h3>
-            </div>
-            <div class="card-body">
-              <form class="was-validated">
-                <div class="form-group">
-                  <select class="custom-select input-style" required>
-                    <option value="">Selectionez le restaurant</option>
-                    <option value="1">Beni Food</option>
-                    <option value="2">Lola Café</option>
-                    <option value="3">Chawarma +</option>
-                  </select>
-                </div>
+        <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
 
-                <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                  <label class="custom-file-label" for="validatedCustomFile">Choisissez l'image</label>
-                </div>
 
-                <button type="submit" class="btn btn-primary btn-style mt-4">Submet</button>
 
-              </form>
+
+
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
-          <!-- // -->
-          <!-- supported elements -->
+        </div>-->
 
-        </section>
-        <!-- //forms -->
+
+        <main class="table">
+          <section class="table__header">
+            <h1>Restaurant</h1>
+          </section>
+          <section class="table__body">
+            <table>
+              <thead>
+                <tr>
+                  <th>Resto<span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Vendeuse<span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Ville<span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Commune<span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Statut<span class="icon-arrow">&UpArrow;</span></th>
+                  <th>Contacts<span class="icon-arrow">&phone;</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                  <td>
+                    <img src="images/Zinzu Chan Lee.jpg" alt="">Beni Food
+                  </td>
+                  <td>
+                    Doh Patricia</td>
+                  <td>Abidjan</td>
+                  <td>Dokoui</td>
+                  <td>
+                    <p class="status delivered">Open</p>
+                  </td>
+                  <td><strong>0709283152</strong></td>
+                </tr>
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                  <td><img src="images/Jeet Saru.jpg" alt="">Lola</td>
+                  <td>Jeet Saru</td>
+                  <td>Abidjan</td>
+                  <td>Cocody</td>
+                  <td>
+                    <p class="status cancelled">Non Diponible</p>
+                  </td>
+                  <td><strong>0553000000</strong></td>
+                </tr>
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                  <td><img src="images/Sonal Gharti.jpg" alt="">Chawarma +</td>
+                  <td>Sonal Gharti</td>
+                  <td>Abidjan</td>
+                  <td>Cocody</td>
+                  <td>
+                    <p class="status pending">Fermé</p>
+                  </td>
+                  <td><strong>4545454545</strong></td>
+                </tr>
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                  <td><img src="images/Alson GC.jpg" alt="">Resto A</td>
+                  <td>Vendeuse A</td>
+                  <td>Abidjan</td>
+                  <td>Cocody</td>
+                  <td>
+                    <p class="status delivered">Open</p>
+                  </td>
+                  <td><strong>4545454545</strong></td>
+                </tr>
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                  <td><img src="images/Sarita Limbu.jpg" alt="">Resto B</td>
+                  <td>Vendeuse B</td>
+                  <td>Abidjan</td>
+                  <td>Cocody</td>
+                  <td>
+                    <p class="status pending">Fermé</p>
+                  </td>
+                  <td><strong>83738473833</strong></td>
+                </tr>
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                  <td><img src="images/Alex Gonley.jpg" alt="">Resto C</td>
+                  <td>Vendeuse C</td>
+                  <td>Abidjan</td>
+                  <td>Cocody</td>
+                  <td>
+                    <p class="status cancelled">Non Disponible</p>
+                  </td>
+                  <td><strong>04034856848</strong></td>
+                </tr>
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                  <td><img src="images/Alson GC.jpg" alt="">Resto D</td>
+                  <td>Vendeuse D</td>
+                  <td>Abidjan</td>
+                  <td>II Plateau</td>
+                  <td>
+                    <p class="status delivered">Open</p>
+                  </td>
+                  <td><strong>45454545454</strong></td>
+                </tr>
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                  <td><img src="images/Sarita Limbu.jpg" alt="">Resto E</td>
+                  <td>Vendeuse E</td>
+                  <td>Abidjan</td>
+                  <td>TreichVille</td>
+                  <td>
+                    <p class="status pending">Fermé</p>
+                  </td>
+                  <td><strong>35434343434</strong></td>
+                </tr>
+                <tr style="cursor:pointer" data-toggle="modal" data-target="#exampleModalCenter">
+                  <td><img src="images/Alex Gonley.jpg" alt="">Resto F</td>
+                  <td>Vendeuse F</td>
+                  <td>Abidjan</td>
+                  <td>Yopougon</td>
+                  <td>
+                    <p class="status cancelled">Non Disponible</p>
+                  </td>
+                  <td><strong>04538367433</strong></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </section>
+      </div>
+    </div>
   </section>
-  <!-- //forms  -->
 
-  </div>
-  <!-- //content -->
-
-  </div>
-  <!-- main content end-->
-  </section>
-  <!--footer section start-->
-  <footer class="dashboard">
-    <p>&copy 2023 FoodIvoire | Design by <a href="" target="_blank" class="text-primary">o</a></p>
-  </footer>
-  <!--footer section end-->
-  <!-- move top -->
-  <button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
-    <span class="fa fa-angle-up"></span>
-  </button>
   <script>
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {
@@ -349,6 +488,33 @@ Author URL: http://w3layouts.com
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+
+
+
+    function displayImage(event) {
+      const selectedImage = document.getElementById('selectedImage');
+      const imageContainer = document.getElementById('imageContainer');
+
+      // Get the selected file
+      const file = event.target.files[0];
+
+      if (file) {
+        // Read the file as a URL
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+          // Set the image source to the read URL
+          selectedImage.src = e.target.result;
+          imageContainer.style.display = 'block'; // Display the image container
+          imageContainer.style.display = 'block'; // Display the image container
+          imageContainer.style.width = '420px'; // Display the image container
+          imageContainer.style.height = '430px'; // Display the image container
+        };
+
+        reader.readAsDataURL(file);
+      }
+    }
+
   </script>
   <!-- /move top -->
 
